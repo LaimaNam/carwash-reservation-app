@@ -1,0 +1,11 @@
+### POST single user
+POST http://localhost:5000/api/users
+Content-Type: application/json
+
+{ 
+"name": "Laima Nam", 
+"email": "laima@laima.com",
+"number": "+37067435550",
+"data": "2021-07-05",
+"time": "19:30"
+}

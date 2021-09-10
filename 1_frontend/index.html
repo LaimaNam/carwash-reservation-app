@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car wash reservation app</title>
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- custom JS -->
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section class="booking-form-wrapper">
+        <!-- booking form -->
+        <form id="booking-form">
+          <h1>Book time for Your car wash</h1>
+          <label for="fullName">Your name and surname:</label>
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            placeholder="Name Surname"
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="labas@labas.lt"
+          />
+
+          <label for="mobileNumber">Number:</label>
+          <input
+            type="text"
+            id="mobileNumber"
+            name="mobileNumber"
+            placeholder="+37067554340"
+          />
+
+          <label for="meeting-time">Choose appointment time:</label>
+          <input
+            type="date"
+            id="appointmentDate"
+            name="appointmentDate"
+            max="2022-07-31"
+          />
+          <input
+            type="time"
+            id="appointmentTime"
+            name="appointmentTime"
+            min="08:00"
+            max="16:00"
+            step="1800"
+            list="appointmentTimeOptions"
+          />
+          <datalist id="appointmentTimeOptions"> </datalist>
+
+          <button type="submit" class="btn btn-book">Book</button>
+        </form>
+        <p id="successErrorMSG"></p>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

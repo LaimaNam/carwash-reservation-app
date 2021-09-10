@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Hind Guntur', sans-serif;
+}
+
+body {
+  background-image: url(https://images.unsplash.com/photo-1550564956-8f914edc0477?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  letter-spacing: 3px;
+}
+
+.booking-form-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  background-color: rgba(43, 43, 43, 0.7);
+  max-width: 100%;
+  padding: 50px;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: -3px 0px 28px -1px rgba(0, 0, 0, 0.69);
+  -webkit-box-shadow: -3px 0px 28px -1px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: -3px 0px 28px -1px rgba(0, 0, 0, 0.69);
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+/* input[type='date'i] {
+  cursor: pointer;
+} */
+
+label {
+  letter-spacing: 2px;
+}
+
+.btn-book {
+  margin-top: 20px;
+  font-size: 1em;
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  padding-top: 2px;
+  background-color: tomato;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.swal2-styled.swal2-confirm {
+  background-color: tomato !important;
+}
+
+#successErrorMSG {
+  font-size: 1.5em;
+  padding: 20px;
+  margin-top: 10px;
+  background-color: rgba(43, 43, 43, 0.7);
+  color: #fff;
+  border-radius: 5px;
+}
